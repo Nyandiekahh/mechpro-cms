@@ -1,0 +1,16 @@
+{% autoescape off %}Dear {{ rfq.full_name }},
+
+Thank you for contacting {{ site.company_name }}.
+Your quotation request has been successfully received.
+
+Reference Number: {{ rfq.reference }}
+
+Our engineering team will review your request and respond within 24
+working hours. If your project requires a site survey, one of our
+engineers will contact you shortly to arrange it.
+
+Kind regards,
+{{ site.company_name }}
+{{ site.tagline }}
+{{ site.phone_display }} | {{ site.email_info }}
+{% endautoescape %}

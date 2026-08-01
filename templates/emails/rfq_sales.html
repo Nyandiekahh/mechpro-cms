@@ -1,0 +1,20 @@
+{% extends "emails/base_email.html" %}
+{% block content %}
+<p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#1e7a46;margin:0 0 6px">New quotation request</p>
+<h2 style="margin:0 0 18px;font-size:22px">{{ rfq.reference }}</h2>
+<table role="presentation" cellpadding="6" cellspacing="0" style="width:100%;font-size:14px;border-collapse:collapse">
+  <tr><td style="color:#737a6e;width:150px;border-bottom:1px solid #eee">Customer</td><td style="border-bottom:1px solid #eee"><strong>{{ rfq.full_name }}</strong>{% if rfq.company %} — {{ rfq.company }}{% endif %}</td></tr>
+  <tr><td style="color:#737a6e;border-bottom:1px solid #eee">Phone</td><td style="border-bottom:1px solid #eee">{{ rfq.phone }}</td></tr>
+  <tr><td style="color:#737a6e;border-bottom:1px solid #eee">Email</td><td style="border-bottom:1px solid #eee">{{ rfq.email|default:"—" }}</td></tr>
+  <tr><td style="color:#737a6e;border-bottom:1px solid #eee">Location</td><td style="border-bottom:1px solid #eee">{{ rfq.location|default:"" }}{% if rfq.town %} {{ rfq.town }},{% endif %} {{ rfq.county }}</td></tr>
+  <tr><td style="color:#737a6e;border-bottom:1px solid #eee">Project type</td><td style="border-bottom:1px solid #eee">{{ rfq.project_type|default:"—" }}</td></tr>
+  <tr><td style="color:#737a6e;border-bottom:1px solid #eee">Service</td><td style="border-bottom:1px solid #eee"><strong>{{ rfq.service_required }}</strong></td></tr>
+  <tr><td style="color:#737a6e;border-bottom:1px solid #eee">Equipment</td><td style="border-bottom:1px solid #eee">{{ rfq.equipment|default:"—" }}</td></tr>
+  <tr><td style="color:#737a6e;border-bottom:1px solid #eee">Attachment</td><td style="border-bottom:1px solid #eee">{% if rfq.attachment %}Yes{% else %}None{% endif %}</td></tr>
+  <tr><td style="color:#737a6e">Submitted</td><td>{{ rfq.created_at|date:"D j M Y, H:i" }}</td></tr>
+</table>
+{% if rfq.message %}
+<p style="margin-top:16px"><span style="color:#737a6e">Details:</span><br>{{ rfq.message|linebreaksbr }}</p>
+{% endif %}
+<p style="margin-top:22px">Open it in the admin dashboard to assign an engineer and update the status.</p>
+{% endblock %}

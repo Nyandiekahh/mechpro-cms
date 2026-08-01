@@ -1,0 +1,17 @@
+{% autoescape off %}NEW QUOTATION REQUEST — {{ rfq.reference }}
+==========================================
+Customer:   {{ rfq.full_name }}{% if rfq.company %} — {{ rfq.company }}{% endif %}
+Phone:      {{ rfq.phone }}
+Email:      {{ rfq.email|default:"—" }}
+Location:   {{ rfq.location|default:"" }}{% if rfq.town %} {{ rfq.town }},{% endif %} {{ rfq.county }}
+Project:    {{ rfq.project_type|default:"—" }}
+Service:    {{ rfq.service_required }}
+Equipment:  {{ rfq.equipment|default:"—" }}
+Attachment: {% if rfq.attachment %}Yes{% else %}None{% endif %}
+Submitted:  {{ rfq.created_at|date:"D j M Y, H:i" }}
+
+{% if rfq.message %}Details:
+{{ rfq.message }}{% endif %}
+
+Open the admin dashboard to assign an engineer and update the status.
+{% endautoescape %}

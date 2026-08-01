@@ -1,0 +1,33 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<h1>Lead analytics</h1>
+<p style="font-size:1.1em"><strong>{{ total }}</strong> quotation requests in total.</p>
+
+<div style="display:flex;flex-wrap:wrap;gap:2.5rem;margin-top:1.5rem">
+  {% for title, rows in analytics_blocks %}{% endfor %}
+  <div>
+    <h2>By status</h2>
+    <table><tbody>
+      {% for label, n in by_status %}<tr><td style="padding:4px 14px 4px 0">{{ label }}</td><th>{{ n }}</th></tr>{% endfor %}
+    </tbody></table>
+  </div>
+  <div>
+    <h2>Most requested services</h2>
+    <table><tbody>
+      {% for label, n in by_service %}<tr><td style="padding:4px 14px 4px 0">{{ label }}</td><th>{{ n }}</th></tr>{% endfor %}
+    </tbody></table>
+  </div>
+  <div>
+    <h2>By county</h2>
+    <table><tbody>
+      {% for label, n in by_county %}<tr><td style="padding:4px 14px 4px 0">{{ label }}</td><th>{{ n }}</th></tr>{% endfor %}
+    </tbody></table>
+  </div>
+  <div>
+    <h2>By source</h2>
+    <table><tbody>
+      {% for label, n in by_source %}<tr><td style="padding:4px 14px 4px 0">{{ label }}</td><th>{{ n }}</th></tr>{% endfor %}
+    </tbody></table>
+  </div>
+</div>
+{% endblock %}

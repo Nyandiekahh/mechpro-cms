@@ -1,0 +1,9 @@
+{% extends "emails/base_email.html" %}
+{% block content %}
+<p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#1e7a46;margin:0 0 6px">Website contact form</p>
+<h2 style="margin:0 0 18px;font-size:20px">{{ msg.subject }}</h2>
+<p><strong>{{ msg.full_name }}</strong>{% if msg.company %} — {{ msg.company }}{% endif %}<br>
+{{ msg.phone }} · {{ msg.email }}</p>
+<p style="border-left:3px solid #1e7a46;padding-left:14px">{{ msg.message|linebreaksbr }}</p>
+<p>Received {{ msg.created_at|date:"D j M Y, H:i" }}.</p>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% autoescape off %}WEBSITE CONTACT FORM
+====================
+Subject: {{ msg.subject }}
+From:    {{ msg.full_name }}{% if msg.company %} — {{ msg.company }}{% endif %}
+Phone:   {{ msg.phone }}
+Email:   {{ msg.email }}
+
+{{ msg.message }}
+
+Received {{ msg.created_at|date:"D j M Y, H:i" }}.
+{% endautoescape %}

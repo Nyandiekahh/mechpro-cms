@@ -1,0 +1,828 @@
+{
+ "services": [
+  {
+   "slug": "air-conditioning-installation",
+   "name": "Air Conditioning Installation",
+   "plate": {
+    "scope": "Residential – Commercial",
+    "lead": "Survey to commissioning",
+    "cover": "All major brands"
+   },
+   "icon": "snowflake",
+   "summary": "Supply and installation of split, cassette, ducted and floor-standing systems — sized from an actual heat-load survey of your space, installed to manufacturer spec, and commissioned with a written report.",
+   "overview": "An air conditioner is only as good as its installation. Undersized units run flat out and die young; oversized ones short-cycle and never dehumidify. We start every installation with a site survey — room dimensions, glazing, occupancy, equipment heat — and size the system from the numbers. Installation follows manufacturer specification to the letter: proper vacuum before charging, pressure-tested braze joints, sloped condensate drainage, and clean electrical terminations. You receive a commissioning report with measured performance, not just a working remote.",
+   "benefits": [
+    "Correct sizing from a real heat-load calculation, not a guess",
+    "Manufacturer-spec installation that keeps your warranty valid",
+    "Neat pipework and trunking — we treat your walls like our own",
+    "Written commissioning report with measured supply temperatures",
+    "Post-installation walkthrough so you know your system"
+   ],
+   "process": [
+    {
+     "step": "Site survey",
+     "detail": "We measure the space, note heat sources and pick mounting positions with you."
+    },
+    {
+     "step": "Quotation",
+     "detail": "Itemised quote — equipment, materials, labour. No surprises at invoice time."
+    },
+    {
+     "step": "Installation",
+     "detail": "Typically one day for a split system. We protect your floors and clean up after."
+    },
+    {
+     "step": "Commissioning",
+     "detail": "Vacuum, charge, test run, measured performance, and your warranty documents."
+    }
+   ],
+   "faqs": [
+    {
+     "q": "How long does a split AC installation take?",
+     "a": "Most single-split installations are completed in 4–8 hours. Multi-splits and concealed units can take 1–3 days depending on ducting and access."
+    },
+    {
+     "q": "Do you supply the unit or can I buy my own?",
+     "a": "Both. We supply genuine equipment from authorised channels, but we're happy to install a unit you've purchased — we'll verify it's correctly sized first."
+    },
+    {
+     "q": "Will installation affect my manufacturer warranty?",
+     "a": "It protects it. Most brands require installation by a qualified contractor for the warranty to hold. We provide the documentation."
+    }
+   ]
+  },
+  {
+   "slug": "hvac-design",
+   "name": "HVAC Design & Engineering",
+   "plate": {
+    "scope": "New builds – Retrofits",
+    "lead": "Load calcs to drawings",
+    "cover": "Consultant-ready"
+   },
+   "icon": "ruler",
+   "summary": "Heat-load calculations, equipment selection, duct and pipe sizing, and coordinated drawings for architects, developers and MEP contractors — designs that pass review and work on day one.",
+   "overview": "Good HVAC design happens before the first wall goes up. We work with architects, quantity surveyors and MEP contractors to produce designs that are buildable, efficient and compliant: cooling-load calculations to recognised standards, equipment schedules, duct and refrigerant pipe sizing, and drawings your contractor can actually price from. For retrofits, we survey what exists before we draw what should — because the ceiling void always has an opinion.",
+   "benefits": [
+    "Load calculations to recognised engineering standards",
+    "Equipment schedules with genuine, locally-supported models",
+    "Drawings coordinated with structural and electrical services",
+    "Value engineering that cuts cost without cutting performance",
+    "Support through tender, construction and commissioning"
+   ],
+   "process": [
+    {
+     "step": "Brief & survey",
+     "detail": "We sit with your team, review drawings, and survey existing conditions where relevant."
+    },
+    {
+     "step": "Load calculation",
+     "detail": "Room-by-room cooling and ventilation loads from the actual building data."
+    },
+    {
+     "step": "Design & drawings",
+     "detail": "Equipment selection, distribution layout, and coordinated drawings for pricing."
+    },
+    {
+     "step": "Construction support",
+     "detail": "Responses to contractor queries, inspections, and commissioning witness."
+    }
+   ],
+   "faqs": [
+    {
+     "q": "Can you review a design another firm produced?",
+     "a": "Yes — design review and value engineering are common requests. We'll flag oversizing, buildability issues and running-cost traps."
+    },
+    {
+     "q": "Do you design for cold rooms and server rooms?",
+     "a": "Yes. Process cooling, server-room precision cooling and cold rooms are within scope — these need redundancy planning, which we build in."
+    }
+   ]
+  },
+  {
+   "slug": "mechanical-ventilation",
+   "name": "Mechanical Ventilation",
+   "plate": {
+    "scope": "Kitchens – Factories",
+    "lead": "Airflow engineered",
+    "cover": "Supply & extract"
+   },
+   "icon": "fan",
+   "summary": "Kitchen extract, fresh-air supply, warehouse and factory ventilation, dust extraction and air curtains — engineered airflow that keeps buildings healthy and workplaces compliant.",
+   "overview": "Ventilation is the part of building services nobody notices until it fails — then everybody notices. We design and install mechanical ventilation for commercial kitchens, basements, warehouses, factories and parking structures: extract fans sized from air-change requirements, ducting balanced so air actually goes where the drawing says, and controls that don't run fans at full speed for empty rooms.",
+   "benefits": [
+    "Air-change rates calculated to occupancy and use, not rules of thumb",
+    "Balanced systems — measured airflow at every grille",
+    "Kitchen extract with grease management that passes inspection",
+    "Energy-efficient EC fans and demand-based controls",
+    "Noise control designed in, not apologised for later"
+   ],
+   "process": [
+    {
+     "step": "Assessment",
+     "detail": "We establish the required air changes and survey routing options."
+    },
+    {
+     "step": "Design",
+     "detail": "Fan selection, duct sizing, grille schedule and controls philosophy."
+    },
+    {
+     "step": "Installation",
+     "detail": "Ducting, fans, grilles and controls installed with minimal disruption."
+    },
+    {
+     "step": "Balancing",
+     "detail": "Airflow measured and balanced at every terminal; report issued."
+    }
+   ],
+   "faqs": [
+    {
+     "q": "My restaurant kitchen fills with smoke — can you fix it?",
+     "a": "Almost certainly. It's usually undersized extract, blocked filters, or missing make-up air. We diagnose with airflow measurements before proposing anything."
+    },
+    {
+     "q": "Do you handle dust extraction for workshops?",
+     "a": "Yes — dust and fume extraction for workshops and factories, including filtration and safe discharge."
+    }
+   ]
+  },
+  {
+   "slug": "preventive-maintenance",
+   "name": "Preventive Maintenance",
+   "plate": {
+    "scope": "Scheduled visits",
+    "lead": "Checklist-driven",
+    "cover": "All systems"
+   },
+   "icon": "clipboard",
+   "summary": "Scheduled servicing that keeps systems efficient, warranties valid and breakdowns rare — filters, coils, refrigerant checks, electrical inspection, and a written condition report every visit.",
+   "overview": "A neglected AC unit loses efficiency every month — dirty coils make the compressor work harder, which raises your power bill first and kills the compressor second. Our preventive maintenance follows a written checklist: filters and coils cleaned, refrigerant pressures verified, condensate drains cleared, electrical connections inspected and torqued, controls tested. Every visit ends with a condition report so you see problems while they're still cheap.",
+   "benefits": [
+    "Lower running costs — clean systems draw less power",
+    "Fewer breakdowns, and never in the worst week for it",
+    "Manufacturer warranty conditions maintained",
+    "Written condition report after every visit",
+    "Priority call-out response for maintenance clients"
+   ],
+   "process": [
+    {
+     "step": "System audit",
+     "detail": "First visit documents every unit — model, serial, condition, location."
+    },
+    {
+     "step": "Schedule",
+     "detail": "Service calendar agreed around your operations — nights and weekends included."
+    },
+    {
+     "step": "Service visits",
+     "detail": "Checklist-driven servicing, photographed and reported."
+    },
+    {
+     "step": "Review",
+     "detail": "Periodic review of system condition and recommendations, with budget forecasts."
+    }
+   ],
+   "faqs": [
+    {
+     "q": "How often should AC units be serviced?",
+     "a": "For most commercial spaces in Kenya, every 3–4 months. Dusty environments and kitchens need more frequent attention; we'll recommend a schedule from your audit."
+    },
+    {
+     "q": "Can you maintain systems you didn't install?",
+     "a": "Yes. Most of our maintenance portfolio is systems installed by others. The audit visit brings everything into our system regardless of origin."
+    }
+   ]
+  },
+  {
+   "slug": "emergency-repairs",
+   "name": "Repairs & Emergency Response",
+   "plate": {
+    "scope": "Diagnose – Repair",
+    "lead": "Genuine parts",
+    "cover": "Rapid response"
+   },
+   "icon": "bolt",
+   "summary": "Fault diagnosis and repair for all major brands — gas leaks, compressor failures, control faults, water leaks — with genuine parts and a clear quote before any work begins.",
+   "overview": "When cooling fails, the clock matters — a server room has minutes, a restaurant has hours. Our repair teams diagnose with instruments, not guesswork: pressures measured, electricals tested, leaks traced with detectors. You get a clear diagnosis and a fixed quote before we touch a spanner. We carry common parts on the van and source the rest through authorised channels, so the repair holds.",
+   "benefits": [
+    "Instrument-based diagnosis — you're told what actually failed",
+    "Fixed quote before repair work begins",
+    "Genuine parts through authorised channels",
+    "Repairs warranted in writing",
+    "Priority response for maintenance-contract clients"
+   ],
+   "process": [
+    {
+     "step": "Call logged",
+     "detail": "Describe the fault; we triage severity and dispatch."
+    },
+    {
+     "step": "Diagnosis",
+     "detail": "On-site testing pins the fault; findings explained in plain language."
+    },
+    {
+     "step": "Quote & repair",
+     "detail": "Fixed quote approved by you, then repair with genuine parts."
+    },
+    {
+     "step": "Test & report",
+     "detail": "System run-tested, performance verified, report issued."
+    }
+   ],
+   "faqs": [
+    {
+     "q": "My AC is running but not cooling — what's wrong?",
+     "a": "The usual suspects are low refrigerant (a leak), dirty coils, or a failing compressor valve. Diagnosis takes under an hour in most cases."
+    },
+    {
+     "q": "Do you repair all brands?",
+     "a": "All major brands — LG, Midea, Daikin, Carrier, Gree, Samsung, Panasonic, Toshiba and more."
+    }
+   ]
+  },
+  {
+   "slug": "commercial-hvac",
+   "name": "Commercial & Industrial HVAC",
+   "plate": {
+    "scope": "VRF – Chillers",
+    "lead": "Multi-site capable",
+    "cover": "Design to service"
+   },
+   "icon": "building",
+   "summary": "VRF/VRV systems, ducted plants, process cooling and large-scale installations for offices, hotels, hospitals, factories and data centres — delivered on programme, alongside other trades.",
+   "overview": "Commercial HVAC is a different discipline: bigger loads, longer pipe runs, building-management integration, and a construction programme that doesn't wait. We deliver VRF and ducted systems for multi-floor offices, hotels and institutions — working alongside main contractors and MEP consultants, hitting milestone dates, and commissioning to the standard that handover inspections demand.",
+   "benefits": [
+    "VRF/VRV design and installation for multi-zone buildings",
+    "Coordination with main contractors and consultants",
+    "Programme discipline — milestones hit, delays flagged early",
+    "Commissioning documentation ready for handover",
+    "Long-term maintenance continuity after practical completion"
+   ],
+   "process": [
+    {
+     "step": "Tender / brief",
+     "detail": "We price from your drawings or design from your brief."
+    },
+    {
+     "step": "Programme",
+     "detail": "Installation sequenced with the construction programme and other trades."
+    },
+    {
+     "step": "Installation",
+     "detail": "Pipework, units and controls installed and inspected in stages."
+    },
+    {
+     "step": "Commissioning",
+     "detail": "Full system commissioning with documentation for handover."
+    }
+   ],
+   "faqs": [
+    {
+     "q": "What size projects do you take on?",
+     "a": "From a single office floor to multi-building campuses. For very large plants we partner with equipment manufacturers on selection and commissioning."
+    },
+    {
+     "q": "Can you integrate with a building management system?",
+     "a": "Yes — modern VRF systems expose standard interfaces, and we coordinate integration with your BMS contractor."
+    }
+   ]
+  },
+  {
+   "slug": "annual-maintenance-contracts",
+   "name": "Annual Maintenance Contracts",
+   "plate": {
+    "scope": "12-month cover",
+    "lead": "Fixed annual cost",
+    "cover": "Priority response"
+   },
+   "icon": "calendar",
+   "summary": "A fixed annual price for scheduled servicing, priority call-outs and a documented maintenance history — the way facility managers keep HVAC off their problem list.",
+   "overview": "An AMC turns HVAC from a series of emergencies into a line item: scheduled visits at agreed intervals, priority response when something does fail, discounted repair rates, and a documented history for every unit you own. Facility managers like AMCs because budgets stop surprising them; finance likes them because one PO covers the year.",
+   "benefits": [
+    "Fixed annual cost — budget once, covered all year",
+    "Scheduled visits that happen without chasing",
+    "Priority emergency response, including out of hours",
+    "Discounted rates on repairs and parts",
+    "Complete asset register and service history"
+   ],
+   "process": [
+    {
+     "step": "Asset audit",
+     "detail": "Every unit documented — the foundation of the contract."
+    },
+    {
+     "step": "Contract & schedule",
+     "detail": "Visit frequency, response times and rates agreed in writing."
+    },
+    {
+     "step": "Service delivery",
+     "detail": "Scheduled visits, reports after each, one point of contact."
+    },
+    {
+     "step": "Annual review",
+     "detail": "Condition trends, replacement forecasts and renewal terms."
+    }
+   ],
+   "faqs": [
+    {
+     "q": "What response time do AMC clients get?",
+     "a": "Contract clients get priority dispatch — typically same-day in Nairobi, next-day in other service areas, with critical-cooling clauses available for server rooms."
+    },
+    {
+     "q": "Can one contract cover multiple sites?",
+     "a": "Yes — multi-site contracts with a single schedule and consolidated reporting are our specialty."
+    }
+   ]
+  }
+ ],
+ "industries": [
+  {
+   "slug": "residential",
+   "name": "Residential",
+   "icon": "home",
+   "tag": "Homes & apartments",
+   "challenge": "Homes need quiet, efficient cooling that doesn't dominate the power bill — and installation crews who respect the fact that people live there.",
+   "approach": [
+    "Split and multi-split systems sized room by room",
+    "Inverter units specified for low running cost",
+    "Neat installation — concealed pipe runs where possible",
+    "Servicing scheduled around your household, not ours"
+   ]
+  },
+  {
+   "slug": "commercial-offices",
+   "name": "Commercial Offices",
+   "icon": "building",
+   "tag": "Workspaces & towers",
+   "challenge": "Offices fight uneven temperatures — the corner office freezes while the open plan bakes. Zoning and control are the whole game.",
+   "approach": [
+    "VRF systems with independent zone control",
+    "Ceiling cassettes and concealed units for clean interiors",
+    "Fresh-air supply that keeps afternoon meetings awake",
+    "After-hours servicing so business hours stay business hours"
+   ]
+  },
+  {
+   "slug": "hospitals",
+   "name": "Hospitals & Clinics",
+   "icon": "cross",
+   "tag": "Healthcare facilities",
+   "challenge": "Healthcare HVAC carries real stakes: infection control, air-change compliance, and zero tolerance for downtime in critical areas.",
+   "approach": [
+    "Air-change rates designed to healthcare requirements",
+    "Filtration specified per area classification",
+    "Redundancy planning for theatres and critical care",
+    "Maintenance with documented, auditable records"
+   ]
+  },
+  {
+   "slug": "hotels",
+   "name": "Hotels & Hospitality",
+   "icon": "bed",
+   "tag": "Guest comfort, quietly",
+   "challenge": "A noisy AC unit becomes a bad review by morning. Hotels need silent guest-room comfort and kitchens that don't perfume the lobby.",
+   "approach": [
+    "Low-noise units selected for guest rooms",
+    "Individual room control with energy-saving occupancy logic",
+    "Kitchen extract that keeps smells out of front-of-house",
+    "Night-shift servicing invisible to guests"
+   ]
+  },
+  {
+   "slug": "restaurants",
+   "name": "Restaurants",
+   "icon": "flame",
+   "tag": "Kitchens & dining",
+   "challenge": "The kitchen produces astonishing heat and grease-laden air; the dining room must stay cool and calm. Two climates, one roof.",
+   "approach": [
+    "Kitchen extract hoods with proper grease management",
+    "Make-up air so extract fans aren't fighting the building",
+    "Dining-area cooling balanced for comfort at capacity",
+    "Filter and duct cleaning schedules that satisfy inspectors"
+   ]
+  },
+  {
+   "slug": "schools",
+   "name": "Schools & Universities",
+   "icon": "book",
+   "tag": "Learning environments",
+   "challenge": "Stuffy classrooms put students to sleep. Institutions need healthy air across many rooms on budgets that answer to committees.",
+   "approach": [
+    "Ventilation-first designs that cut cooling cost",
+    "Robust, low-maintenance equipment selections",
+    "Phased installation aligned to term calendars",
+    "Multi-year maintenance contracts with fixed pricing"
+   ]
+  },
+  {
+   "slug": "factories",
+   "name": "Factories & Industrial",
+   "icon": "factory",
+   "tag": "Production facilities",
+   "challenge": "Process heat, dust, fumes and big open volumes — industrial ventilation is about worker safety and process stability, not comfort alone.",
+   "approach": [
+    "General and spot ventilation engineered from heat loads",
+    "Dust and fume extraction at source",
+    "Process cooling for temperature-sensitive production",
+    "Heat-recovery options where exhaust air has value"
+   ]
+  },
+  {
+   "slug": "warehouses",
+   "name": "Warehouses & Logistics",
+   "icon": "box",
+   "tag": "Storage at scale",
+   "challenge": "Large volumes, tall racking, and goods that mind the temperature. Warehouses need airflow strategies, not just bigger fans.",
+   "approach": [
+    "High-volume ventilation with destratification",
+    "Targeted cooling for temperature-sensitive zones",
+    "Air curtains at loading doors to hold conditions",
+    "Energy monitoring so the roof isn't cooling the sky"
+   ]
+  },
+  {
+   "slug": "data-centres",
+   "name": "Data Centres & Server Rooms",
+   "icon": "server",
+   "tag": "Critical cooling",
+   "challenge": "Servers fail in minutes without cooling. This is precision territory: redundancy, monitoring, and response times written into contracts.",
+   "approach": [
+    "Precision cooling sized to IT load with headroom",
+    "N+1 redundancy so one failure is an alert, not an outage",
+    "Temperature monitoring with alarmed thresholds",
+    "Critical-response maintenance clauses in writing"
+   ]
+  }
+ ],
+ "products": [
+  {
+   "slug": "lg-dualcool-12000-wall",
+   "name": "LG DUALCOOL Inverter 12,000 BTU",
+   "brand": "LG",
+   "model": "S4-Q12JA3QD",
+   "category": "Wall Mounted",
+   "capacityBtu": "12,000",
+   "coverage": "Up to 18 m²",
+   "energyRating": "A++",
+   "refrigerant": "R-32",
+   "power": "0.9 kW",
+   "warranty": "10-year compressor, 2-year parts",
+   "badges": [
+    "Featured",
+    "Best Seller"
+   ],
+   "features": [
+    "Dual Inverter compressor — up to 70% energy saving vs fixed speed",
+    "Fast cooling mode reaches set temperature quicker",
+    "Low noise: 19 dB in sleep mode",
+    "Auto-cleaning coil reduces mould and odour"
+   ],
+   "idealFor": "Bedrooms, home offices and small shops."
+  },
+  {
+   "slug": "midea-xtreme-18000-wall",
+   "name": "Midea Xtreme Save 18,000 BTU",
+   "brand": "Midea",
+   "model": "MSAGBU-18HRFN8",
+   "category": "Wall Mounted",
+   "capacityBtu": "18,000",
+   "coverage": "Up to 28 m²",
+   "energyRating": "A++",
+   "refrigerant": "R-32",
+   "power": "1.4 kW",
+   "warranty": "5-year compressor, 2-year parts",
+   "badges": [
+    "Featured"
+   ],
+   "features": [
+    "Full DC inverter with wide voltage tolerance — friendly to Kenyan grids",
+    "Gear function caps power draw at 50/75% on demand",
+    "Self-diagnosis with error display",
+    "Golden-fin coating resists coastal corrosion"
+   ],
+   "idealFor": "Living rooms, offices and retail spaces."
+  },
+  {
+   "slug": "daikin-cassette-24000",
+   "name": "Daikin Ceiling Cassette 24,000 BTU",
+   "brand": "Daikin",
+   "model": "FCC71AV1K",
+   "category": "Cassette",
+   "capacityBtu": "24,000",
+   "coverage": "Up to 40 m²",
+   "energyRating": "A+",
+   "refrigerant": "R-32",
+   "power": "2.1 kW",
+   "warranty": "5-year compressor, 1-year parts",
+   "badges": [
+    "Featured"
+   ],
+   "features": [
+    "360° airflow — even temperature across open-plan rooms",
+    "Flush ceiling fit; only the panel is visible",
+    "Individual louvre control per direction",
+    "Optional fresh-air intake connection"
+   ],
+   "idealFor": "Open-plan offices, restaurants and banking halls."
+  },
+  {
+   "slug": "carrier-ducted-36000",
+   "name": "Carrier Ducted Unit 36,000 BTU",
+   "brand": "Carrier",
+   "model": "42QSS036DS",
+   "category": "Ducted",
+   "capacityBtu": "36,000",
+   "coverage": "Up to 60 m²",
+   "energyRating": "A+",
+   "refrigerant": "R-410A",
+   "power": "3.2 kW",
+   "warranty": "5-year compressor, 1-year parts",
+   "badges": [],
+   "features": [
+    "Fully concealed — grilles are all you see",
+    "High static pressure for long duct runs",
+    "Zoning-ready with motorised dampers",
+    "Quiet operation suited to hotels and boardrooms"
+   ],
+   "idealFor": "Hotels, boardrooms and premium interiors."
+  },
+  {
+   "slug": "gree-floor-standing-48000",
+   "name": "Gree Floor Standing 48,000 BTU",
+   "brand": "Gree",
+   "model": "T-Fresh GVA48AL",
+   "category": "Floor Standing",
+   "capacityBtu": "48,000",
+   "coverage": "Up to 80 m²",
+   "energyRating": "A",
+   "refrigerant": "R-410A",
+   "power": "4.4 kW",
+   "warranty": "5-year compressor, 1-year parts",
+   "badges": [
+    "New Arrival"
+   ],
+   "features": [
+    "Powerful vertical airflow throws air over 15 metres",
+    "No ceiling work required — installs in a day",
+    "Ideal where ceilings can't carry cassettes",
+    "Robust filters for high-dust environments"
+   ],
+   "idealFor": "Halls, churches, showrooms and factories."
+  },
+  {
+   "slug": "lg-multi-v5-vrf",
+   "name": "LG Multi V 5 VRF System",
+   "brand": "LG",
+   "model": "ARUM-LTE5 series",
+   "category": "VRF",
+   "capacityBtu": "76,000+",
+   "coverage": "Multi-zone buildings",
+   "energyRating": "A++",
+   "refrigerant": "R-410A",
+   "power": "Sized per project",
+   "warranty": "Project warranty per contract",
+   "badges": [
+    "Featured"
+   ],
+   "features": [
+    "One outdoor unit serves dozens of indoor units",
+    "Zone-by-zone control with central management",
+    "Heat-recovery options move heat instead of wasting it",
+    "BMS integration via standard protocols"
+   ],
+   "idealFor": "Multi-floor offices, hotels and institutions. Quoted per project after survey."
+  },
+  {
+   "slug": "systemair-extract-fan",
+   "name": "Systemair Duct Extract Fan",
+   "brand": "Systemair",
+   "model": "K sileo series",
+   "category": "Ventilation Fans",
+   "capacityBtu": "—",
+   "coverage": "150–2,500 m³/h",
+   "energyRating": "EC motor",
+   "refrigerant": "—",
+   "power": "From 0.04 kW",
+   "warranty": "2-year parts",
+   "badges": [],
+   "features": [
+    "Sound-insulated casing — ventilation you don't hear",
+    "EC motors sip power at part load",
+    "Speed-controllable for demand ventilation",
+    "Compact circular duct mounting"
+   ],
+   "idealFor": "Washrooms, kitchens, basements and meeting rooms."
+  },
+  {
+   "slug": "midea-air-curtain-1200",
+   "name": "Midea Air Curtain 1200mm",
+   "brand": "Midea",
+   "model": "FM-1212L/Y",
+   "category": "Air Curtains",
+   "capacityBtu": "—",
+   "coverage": "Doorways to 1.2 m",
+   "energyRating": "Low-power",
+   "refrigerant": "—",
+   "power": "0.25 kW",
+   "warranty": "1-year parts",
+   "badges": [],
+   "features": [
+    "Invisible barrier keeps conditioned air in, dust and insects out",
+    "Cuts cooling loss at busy entrances",
+    "Door-switch interlock available",
+    "Quiet operation for retail frontage"
+   ],
+   "idealFor": "Shop entrances, hotel doors, loading doors."
+  }
+ ],
+ "projects": [
+  {
+   "slug": "westlands-office-vrf",
+   "name": "Six-Floor Office VRF Retrofit",
+   "sector": "Commercial",
+   "location": "Westlands, Nairobi",
+   "year": "2026",
+   "equipment": "LG Multi V VRF · 42 indoor units",
+   "summary": "Replaced ageing split units across six floors with a zoned VRF system — installed floor by floor over weekends, so the client never lost a working day. Measured energy use dropped by roughly a third."
+  },
+  {
+   "slug": "industrial-kitchen-extract",
+   "name": "Hotel Kitchen Extract Rebuild",
+   "sector": "Hospitality",
+   "location": "Upper Hill, Nairobi",
+   "year": "2025",
+   "equipment": "Extract hoods · make-up air · EC fans",
+   "summary": "A busy hotel kitchen that smoked out its own pass. We rebuilt the extract with properly sized hoods and make-up air; the kitchen now holds negative pressure and the lobby smells like a lobby."
+  },
+  {
+   "slug": "server-room-precision",
+   "name": "Server Room Precision Cooling",
+   "sector": "Commercial",
+   "location": "Kilimani, Nairobi",
+   "year": "2025",
+   "equipment": "Redundant precision units · monitoring",
+   "summary": "N+1 precision cooling for a fintech server room with alarmed temperature monitoring. Commissioned with failover testing witnessed by the client's IT lead — one unit off, room holds."
+  },
+  {
+   "slug": "hospital-ward-ventilation",
+   "name": "Clinic Ward Ventilation Upgrade",
+   "sector": "Healthcare",
+   "location": "Thika, Kiambu",
+   "year": "2025",
+   "equipment": "Fresh-air handling · filtration",
+   "summary": "Air-change upgrade across ward and treatment areas to healthcare ventilation requirements, delivered in phases around a live clinic without a single suspended service day."
+  },
+  {
+   "slug": "residential-apartments-splits",
+   "name": "48-Unit Apartment Cooling Package",
+   "sector": "Residential",
+   "location": "Kilimani, Nairobi",
+   "year": "2024",
+   "equipment": "Inverter splits · concealed piping",
+   "summary": "Developer package for a new apartment block: concealed refrigerant piping installed at construction stage, inverter splits fitted and commissioned at finishing — clean walls, no trunking."
+  },
+  {
+   "slug": "warehouse-ventilation-mombasa",
+   "name": "Warehouse Ventilation, Coast Region",
+   "sector": "Industrial",
+   "location": "Mombasa",
+   "year": "2024",
+   "equipment": "Roof extract · destratification fans",
+   "summary": "High-volume ventilation with destratification for a logistics warehouse in coastal heat — corrosion-resistant equipment specified for the marine environment."
+  }
+ ],
+ "testimonials": [
+  {
+   "name": "Grace W.",
+   "role": "Facility Manager, Westlands office park",
+   "rating": 5,
+   "text": "The difference is the reporting. After every service visit I get a written condition report with photos. When I ask for budget for a replacement, I have evidence — my directors approve it in one meeting."
+  },
+  {
+   "name": "Daniel K.",
+   "role": "Restaurant Owner, Nairobi CBD",
+   "rating": 5,
+   "text": "Three companies looked at our smoking kitchen and quoted bigger fans. MECHPRO measured the airflow, found the real problem was make-up air, and fixed it for less than the other quotes."
+  },
+  {
+   "name": "Eng. Otieno",
+   "role": "MEP Consultant",
+   "rating": 5,
+   "text": "I specify contractors partly on how they commission. MECHPRO hands over measured performance data without being chased for it — that tells you everything about how they work."
+  },
+  {
+   "name": "Sarah M.",
+   "role": "Homeowner, Kiambu",
+   "rating": 5,
+   "text": "They installed two bedroom units in a morning, hoovered the drilling dust before leaving, and the technician walked me through the remote like a patient teacher. Small things, but they matter."
+  }
+ ],
+ "brands": [
+  "LG",
+  "Midea",
+  "Daikin",
+  "Carrier",
+  "Gree",
+  "Toshiba",
+  "Samsung",
+  "Panasonic"
+ ],
+ "posts": [
+  {
+   "slug": "ac-installation-cost-kenya",
+   "title": "How much does AC installation cost in Kenya? An honest breakdown",
+   "category": "Buying Guides",
+   "date": "July 2026",
+   "readTime": "6 min read",
+   "excerpt": "The quote depends on four things: unit capacity, pipe run length, wall type and access. Here's how each one moves the number — so you can read any quotation like a professional.",
+   "body": [
+    "Every week someone asks us for 'the price of installing an AC' — and the honest answer is that installation cost is built from four variables, not pulled from a price list.",
+    "Capacity drives the equipment price: a 12,000 BTU bedroom unit and a 24,000 BTU office cassette are different animals. Pipe run length is the second lever — refrigerant pipework, insulation and cabling are priced per metre, so a unit mounted back-to-back with its outdoor unit costs meaningfully less to install than one 15 metres away.",
+    "Wall type matters more than people expect: coring through stone masonry takes different tools and time than a drywall partition. And access — ground floor versus a fourth-floor outdoor unit needing certified riggers — can be the biggest swing of all.",
+    "The takeaway: distrust any installation price quoted before a site survey. A serious contractor surveys first, then quotes a number that won't grow on invoice day."
+   ]
+  },
+  {
+   "slug": "inverter-vs-fixed-speed",
+   "title": "Inverter vs fixed-speed AC: what the power bill says",
+   "category": "Energy Saving",
+   "date": "July 2026",
+   "readTime": "5 min read",
+   "excerpt": "Inverter units cost more upfront and less every month after. We walk through the arithmetic that tells you when the premium pays for itself — usually sooner than you'd think.",
+   "body": [
+    "A fixed-speed compressor has two settings: flat out, and off. It cools by sprinting and resting, and every restart draws a surge of current. An inverter compressor varies its speed continuously, cruising at exactly the output the room needs.",
+    "In practice, for a unit that runs several hours a day, inverter technology typically trims 30–50% off the cooling portion of your power bill. Against a purchase premium of perhaps 15–25%, the payback period for a daily-use unit in Kenya commonly lands between one and two years.",
+    "Where fixed-speed still makes sense: rooms cooled rarely — a guest room used a few weekends a year doesn't run long enough to repay the premium.",
+    "Rule of thumb: if it runs daily, buy inverter. If it runs monthly, save the capital."
+   ]
+  },
+  {
+   "slug": "why-ac-not-cooling",
+   "title": "Five reasons your AC runs but doesn't cool",
+   "category": "Maintenance",
+   "date": "June 2026",
+   "readTime": "4 min read",
+   "excerpt": "Before you call anyone, check these five things — two of them you can fix yourself in ten minutes, and the other three you'll be able to describe precisely on the phone.",
+   "body": [
+    "First, the filters. A clogged filter suffocates airflow — the coil freezes, and the unit blows air that feels weak and barely cool. Wash the filters, run the unit fan-only for an hour, and you may be done.",
+    "Second, the outdoor unit. If its coil is caked in dust or its airflow is blocked by stored boxes, heat has nowhere to go. Clear a half-metre around it.",
+    "Third, refrigerant leaks — the most common professional-level fault. Symptoms: ice on the small copper pipe, hissing, cooling that faded gradually over weeks. This needs a technician with a leak detector, not just a top-up.",
+    "Fourth, a failing capacitor or compressor valve — the unit hums, the fan spins, but the compressor never kicks. Fifth, thermostat or sensor faults reading the room wrong.",
+    "Anything past the first two: log the symptoms and call a professional. Describing 'ice on the small pipe, faded over three weeks' gets you a faster, cheaper diagnosis than 'it's not working'."
+   ]
+  }
+ ],
+ "stats": [
+  {
+   "value": "15+",
+   "label": "Years combined experience"
+  },
+  {
+   "value": "240+",
+   "label": "Installations completed"
+  },
+  {
+   "value": "11",
+   "label": "Counties served"
+  },
+  {
+   "value": "98%",
+   "label": "Clients who call us back"
+  },
+  {
+   "value": "24/7",
+   "label": "Emergency response"
+  }
+ ],
+ "whyUs": [
+  {
+   "icon": "engineer",
+   "title": "Engineers, not salespeople",
+   "text": "Every job starts with a site survey and a heat-load calculation — not a guess. You get equipment sized for your space, not the biggest unit in the warehouse."
+  },
+  {
+   "icon": "leaf",
+   "title": "Energy bills we can defend",
+   "text": "We specify inverter and VRF systems where they pay for themselves, and we show you the running-cost math before you spend a shilling."
+  },
+  {
+   "icon": "shield",
+   "title": "Genuine equipment, real warranties",
+   "text": "We supply from authorised channels only. When the warranty card says 5 years, the manufacturer honours it — because the serial number checks out."
+  },
+  {
+   "icon": "wrench",
+   "title": "Installation that passes inspection",
+   "text": "Braze joints pressure-tested, condensate lines sloped, electricals to code. Our work is what consultant engineers point at during handover."
+  },
+  {
+   "icon": "clock",
+   "title": "Fast response, honest timelines",
+   "text": "We answer the phone, we show up when we said we would, and if a part needs importing we tell you upfront — not after two weeks of silence."
+  },
+  {
+   "icon": "map",
+   "title": "Nationwide, and staying",
+   "text": "Nairobi is home base, but our teams service contracts from Mombasa to Kisumu. Wherever your facility is, maintenance day happens on schedule."
+  }
+ ]
+}
