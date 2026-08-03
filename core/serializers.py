@@ -35,7 +35,8 @@ class SiteSettingsSerializer(serializers.ModelSerializer):
 
     def get_socials(self, obj):
         pairs = [("Facebook", obj.facebook_url), ("Instagram", obj.instagram_url),
-                 ("LinkedIn", obj.linkedin_url), ("X", obj.x_url)]
+                 ("LinkedIn", obj.linkedin_url), ("X", obj.x_url),
+                 ("TikTok", obj.tiktok_url)]
         return [{"label": label, "href": url or "#"} for label, url in pairs]
 
     def get_serviceAreas(self, obj):

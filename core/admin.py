@@ -20,7 +20,7 @@ class SiteSettingsAdmin(admin.ModelAdmin):
         ("Location & hours", {"fields": ("address", "hours", "emergency_note",
                                           "map_embed_src", "service_areas")}),
         ("Social media", {"fields": ("facebook_url", "instagram_url",
-                                      "linkedin_url", "x_url")}),
+                                      "linkedin_url", "x_url", "tiktok_url")}),
     )
 
     def has_add_permission(self, request):

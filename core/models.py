@@ -65,6 +65,7 @@ class SiteSettings(models.Model):
     instagram_url = models.URLField(blank=True)
     linkedin_url = models.URLField(blank=True)
     x_url = models.URLField(blank=True, verbose_name="X (Twitter) URL")
+    tiktok_url = models.URLField(blank=True, verbose_name="TikTok URL")
 
     service_areas = models.TextField(
         default="Nairobi, Kiambu, Machakos, Kajiado, Nakuru, Eldoret, Kisumu, Mombasa, Nyeri, Thika, Meru",
