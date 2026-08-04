@@ -85,7 +85,9 @@ class Product(SeoModel, TimeStampedModel):
 
     def save(self, *args, **kwargs):
         if not self.slug:
-            self.slug = slugify(f"{self.brand.name}-{self.name}")[:140]
+            name_starts_with_brand = self.name.lower().startswith(self.brand.name.lower())
+            base = self.name if name_starts_with_brand else f"{self.brand.name}-{self.name}"
+            self.slug = slugify(base)[:140]
         super().save(*args, **kwargs)
 
     def __str__(self):

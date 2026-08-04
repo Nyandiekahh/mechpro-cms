@@ -115,6 +115,10 @@ SITEMAPS = {
     "services": ServiceSitemap,
     "solutions": IndustrySitemap,
     "products": ProductSitemap,
-    "projects": ProjectSitemap,
+    # ProjectSitemap intentionally removed: the frontend has no individual
+    # project detail pages (/projects is a single listing page), so
+    # per-project entries here all resolved to the same URL, submitting
+    # duplicate content to Google. The listing page is already covered by
+    # StaticPagesSitemap. Revisit if project detail pages get built later.
     "blog": PostSitemap,
 }
