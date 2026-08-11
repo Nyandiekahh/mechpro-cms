@@ -74,6 +74,17 @@ class ProjectSerializer(serializers.ModelSerializer):
         return request.build_absolute_uri(obj.image.url) if request else obj.image.url
 
 
+class ProjectDetailSerializer(ProjectSerializer):
+    fullDescription = serializers.SerializerMethodField()
+
+    class Meta(ProjectSerializer.Meta):
+        fields = ProjectSerializer.Meta.fields + ["fullDescription"]
+
+    def get_fullDescription(self, obj):
+        text = obj.full_description or obj.summary
+        return [p.strip() for p in text.split("\n\n") if p.strip()]
+
+
 class PostListSerializer(serializers.ModelSerializer):
     category = serializers.CharField(source="category.name")
     date = serializers.SerializerMethodField()

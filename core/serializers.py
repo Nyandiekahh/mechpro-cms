@@ -18,13 +18,15 @@ class SiteSettingsSerializer(serializers.ModelSerializer):
     mapEmbedSrc = serializers.CharField(source="map_embed_src")
     socials = serializers.SerializerMethodField()
     serviceAreas = serializers.SerializerMethodField()
+    contactPageTitle = serializers.CharField(source="contact_page_title")
+    contactPageLead = serializers.CharField(source="contact_page_lead")
 
     class Meta:
         model = SiteSettings
         fields = ["name", "shortName", "tagline", "descriptor", "phoneDisplay",
                   "phoneHref", "whatsappNumber", "whatsappDefaultMessage", "emails",
                   "address", "hours", "emergencyNote", "mapEmbedSrc", "socials",
-                  "serviceAreas"]
+                  "serviceAreas", "contactPageTitle", "contactPageLead"]
 
     def get_phoneHref(self, obj):
         return "tel:" + obj.phone_display.replace(" ", "")

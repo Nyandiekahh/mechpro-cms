@@ -139,6 +139,10 @@ class Project(SeoModel, TimeStampedModel):
     year = models.CharField(max_length=10)
     equipment = models.CharField(max_length=200, help_text='e.g. "LG Multi V VRF · 42 indoor units"')
     summary = models.TextField()
+    full_description = models.TextField(
+        blank=True,
+        help_text="Longer write-up shown on the project's own detail page. "
+                  "Leave blank to just show the summary there too.")
     image = models.ImageField(upload_to="projects/", blank=True)
     order = models.PositiveIntegerField(default=0)
     is_active = models.BooleanField(default=True)

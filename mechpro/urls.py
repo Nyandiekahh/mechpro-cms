@@ -11,7 +11,8 @@ from content.views import (IndustryDetailView, IndustryListView, PostDetailView,
                            PostListView, ProjectListView, ServiceDetailView,
                            ServiceListView)
 from core.sitemaps import SITEMAPS
-from core.views import ContactView, NewsletterSubscribeView, SiteBundleView
+from core.views import (ContactView, LegalPageView, MaintenanceStatusView,
+                        NewsletterSubscribeView, SiteBundleView, TrackClickView)
 from leads.views import LeadAnalyticsView, RFQCreateView
 
 urlpatterns = [
@@ -34,6 +35,9 @@ urlpatterns = [
     path("api/contact/", ContactView.as_view(), name="contact"),
     path("api/newsletter/", NewsletterSubscribeView.as_view(), name="newsletter"),
     path("api/leads/analytics/", LeadAnalyticsView.as_view(), name="lead-analytics"),
+    path("api/legal/<slug:slug>/", LegalPageView.as_view(), name="legal-page"),
+    path("api/maintenance/", MaintenanceStatusView.as_view(), name="maintenance-status"),
+    path("api/track-click/", TrackClickView.as_view(), name="track-click"),
 
     # --- SEO (WRS: XML sitemap + robots.txt) ---
     path("sitemap.xml", sitemap, {"sitemaps": SITEMAPS},

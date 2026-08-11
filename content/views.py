@@ -3,8 +3,9 @@ from rest_framework.generics import ListAPIView, RetrieveAPIView
 
 from .models import Industry, Post, Project, Service
 from .serializers import (IndustrySerializer, PostDetailSerializer,
-                          PostListSerializer, ProjectSerializer,
-                          ServiceListSerializer, ServiceSerializer)
+                          PostListSerializer, ProjectDetailSerializer,
+                          ProjectSerializer, ServiceListSerializer,
+                          ServiceSerializer)
 
 
 class ServiceListView(ListAPIView):
@@ -37,6 +38,12 @@ class ProjectListView(ListAPIView):
     serializer_class = ProjectSerializer
     filterset_fields = {"sector": ["exact"]}
     pagination_class = None
+
+
+class ProjectDetailView(RetrieveAPIView):
+    queryset = Project.objects.filter(is_active=True)
+    serializer_class = ProjectDetailSerializer
+    lookup_field = "slug"
 
 
 class PostListView(ListAPIView):

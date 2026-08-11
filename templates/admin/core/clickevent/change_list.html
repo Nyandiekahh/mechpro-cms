@@ -1,0 +1,16 @@
+{% extends "admin/change_list.html" %}
+{% block content_title %}
+<h1>Click tracking</h1>
+<div style="display:flex;gap:2rem;margin-bottom:1.2rem;flex-wrap:wrap">
+  <div style="background:#e9f3ec;border:1px solid #cfe4d6;border-radius:4px;padding:14px 20px">
+    <div style="font-family:monospace;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#14603a">Total clicks (all time)</div>
+    <div style="font-size:24px;font-weight:bold;color:#14603a">{{ click_grand_total }}</div>
+  </div>
+  {% for row in click_totals %}
+  <div style="background:#fff;border:1px solid #ddd;border-radius:4px;padding:14px 20px">
+    <div style="font-family:monospace;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#777">{{ row.kind }}</div>
+    <div style="font-size:24px;font-weight:bold">{{ row.total }}</div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
