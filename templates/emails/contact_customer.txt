@@ -1,0 +1,14 @@
+Dear {{ msg.full_name }},
+
+Thank you for contacting {{ site.company_name }}.
+We've received your message and a member of our team will get back to
+you shortly.
+
+Subject: {{ msg.subject }}
+
+We typically respond within one working day, usually much sooner.
+
+Kind regards,
+{{ site.company_name }}
+{{ site.tagline }}
+{{ site.phone_display }} | {{ site.email_info }}

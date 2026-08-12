@@ -1,0 +1,18 @@
+{% extends "emails/base_email.html" %}
+{% block content %}
+<p>Dear {{ msg.full_name }},</p>
+<p>Thank you for contacting <strong>{{ site.company_name }}</strong>.</p>
+<p>We've received your message and a member of our team will get back to you shortly.</p>
+<table role="presentation" cellpadding="0" cellspacing="0" style="margin:18px 0;border:1px solid #dde2d8;width:100%">
+  <tr>
+    <td style="padding:14px 18px;background:#e9f3ec">
+      <span style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#14603a">Subject</span><br>
+      <strong style="font-size:16px;color:#14603a">{{ msg.subject }}</strong>
+    </td>
+  </tr>
+</table>
+<p>We typically respond within <strong>one working day</strong>, usually much sooner.</p>
+<p style="margin-top:22px">Kind regards,<br>
+<strong>{{ site.company_name }}</strong><br>
+{{ site.tagline }}</p>
+{% endblock %}

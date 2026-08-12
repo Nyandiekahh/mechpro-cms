@@ -29,12 +29,27 @@ def dispatch_rfq_emails(rfq):
 
 
 def dispatch_contact_emails(msg):
-    """Alert the team when the general contact form is used."""
+    """
+    Acknowledge the customer (if they gave a valid email) and alert the
+    sales team. Previously this only sent the sales alert — the customer
+    acknowledgment was never built for this form, only for the RFQ flow.
+    """
     site = SiteSettings.load()
+    context = {"msg": msg, "site": site}
+
+    if msg.email:
+        send_templated_email(
+            purpose="contact_customer_ack",
+            to_list=[msg.email],
+            subject="We've received your message",
+            template_base="contact_customer",
+            context=context,
+        )
+
     send_templated_email(
         purpose="contact_alert",
         to_list=settings.RFQ_NOTIFY_EMAILS,
         subject=f"Website contact: {msg.subject}",
         template_base="contact_notify",
-        context={"msg": msg, "site": site},
+        context=context,
     )
