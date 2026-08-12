@@ -92,6 +92,21 @@ class SiteSettings(models.Model):
         default="Phone, WhatsApp, email or the form below, whichever suits you. "
                 "Office hours are listed below, and contract clients have emergency lines.")
 
+    # --- Contact form field labels (Option A: labels + required toggle,
+    # the six fields themselves stay fixed) ---
+    contact_form_name_label = models.CharField(max_length=60, blank=True, default="Full name")
+    contact_form_name_required = models.BooleanField(default=True)
+    contact_form_company_label = models.CharField(max_length=60, blank=True, default="Company (optional)")
+    contact_form_company_required = models.BooleanField(default=False)
+    contact_form_email_label = models.CharField(max_length=60, blank=True, default="Email address")
+    contact_form_email_required = models.BooleanField(default=True)
+    contact_form_phone_label = models.CharField(max_length=60, blank=True, default="Phone number")
+    contact_form_phone_required = models.BooleanField(default=True)
+    contact_form_subject_label = models.CharField(max_length=60, blank=True, default="Subject")
+    contact_form_subject_required = models.BooleanField(default=True)
+    contact_form_message_label = models.CharField(max_length=60, blank=True, default="Message")
+    contact_form_message_required = models.BooleanField(default=True)
+
     class Meta:
         verbose_name = "Site settings"
         verbose_name_plural = "Site settings"

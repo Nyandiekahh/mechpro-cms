@@ -25,6 +25,17 @@ class SiteSettingsAdmin(admin.ModelAdmin):
         ("Maintenance mode", {"fields": ("maintenance_mode", "maintenance_message",
                                           "maintenance_ticker")}),
         ("Contact page", {"fields": ("contact_page_title", "contact_page_lead")}),
+        ("Contact form fields", {
+            "description": "Customize the labels shown on the Contact page form, "
+                           "and whether each field is required.",
+            "fields": (
+                ("contact_form_name_label", "contact_form_name_required"),
+                ("contact_form_company_label", "contact_form_company_required"),
+                ("contact_form_email_label", "contact_form_email_required"),
+                ("contact_form_phone_label", "contact_form_phone_required"),
+                ("contact_form_subject_label", "contact_form_subject_required"),
+                ("contact_form_message_label", "contact_form_message_required"),
+            )}),
     )
 
     def has_add_permission(self, request):

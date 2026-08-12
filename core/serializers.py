@@ -20,13 +20,24 @@ class SiteSettingsSerializer(serializers.ModelSerializer):
     serviceAreas = serializers.SerializerMethodField()
     contactPageTitle = serializers.CharField(source="contact_page_title")
     contactPageLead = serializers.CharField(source="contact_page_lead")
+    contactFormFields = serializers.SerializerMethodField()
 
     class Meta:
         model = SiteSettings
         fields = ["name", "shortName", "tagline", "descriptor", "phoneDisplay",
                   "phoneHref", "whatsappNumber", "whatsappDefaultMessage", "emails",
                   "address", "hours", "emergencyNote", "mapEmbedSrc", "socials",
-                  "serviceAreas", "contactPageTitle", "contactPageLead"]
+                  "serviceAreas", "contactPageTitle", "contactPageLead", "contactFormFields"]
+
+    def get_contactFormFields(self, obj):
+        return {
+            "fullName": {"label": obj.contact_form_name_label, "required": obj.contact_form_name_required},
+            "company": {"label": obj.contact_form_company_label, "required": obj.contact_form_company_required},
+            "email": {"label": obj.contact_form_email_label, "required": obj.contact_form_email_required},
+            "phone": {"label": obj.contact_form_phone_label, "required": obj.contact_form_phone_required},
+            "subject": {"label": obj.contact_form_subject_label, "required": obj.contact_form_subject_required},
+            "message": {"label": obj.contact_form_message_label, "required": obj.contact_form_message_required},
+        }
 
     def get_phoneHref(self, obj):
         return "tel:" + obj.phone_display.replace(" ", "")
