@@ -11,10 +11,15 @@ class ProductFilter(filters.FilterSet):
     category = filters.CharFilter(field_name="category__slug", lookup_expr="iexact")
     brand = filters.CharFilter(field_name="brand__slug", lookup_expr="iexact")
     featured = filters.BooleanFilter(field_name="is_featured")
+    energyRating = filters.CharFilter(field_name="energy_rating", lookup_expr="iexact")
+    capacity = filters.CharFilter(field_name="capacity_btu", lookup_expr="icontains")
+    # "installationType" is an alias for category — same underlying field,
+    # named to match how the WRS describes this filter to end users.
+    installationType = filters.CharFilter(field_name="category__slug", lookup_expr="iexact")
 
     class Meta:
         model = Product
-        fields = ["category", "brand", "featured"]
+        fields = ["category", "brand", "featured", "energyRating", "capacity", "installationType"]
 
 
 class ProductListView(ListAPIView):
