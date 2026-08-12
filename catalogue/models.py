@@ -104,10 +104,17 @@ class Product(SeoModel, TimeStampedModel):
 
 
 class ProductImage(models.Model):
+    FIT_CHOICES = [("cover", "Fill and crop (cover)"), ("contain", "Fit whole image (contain)")]
+
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="images")
     image = models.ImageField(upload_to="products/")
     alt_text = models.CharField(max_length=160, blank=True,
                                 help_text="Describe the image for SEO and accessibility (WRS Image SEO).")
+    fit_mode = models.CharField(
+        max_length=10, choices=FIT_CHOICES, default="cover",
+        help_text="How this image fits its frame on the site. Cover fills the "
+                  "space and crops edges. Contain shows the whole image with "
+                  "letterboxing, best for logos or images that must not be cropped.")
     is_primary = models.BooleanField(default=False)
     order = models.PositiveIntegerField(default=0)
 
@@ -116,3 +123,31 @@ class ProductImage(models.Model):
 
     def __str__(self):
         return f"Image for {self.product.name}"
+
+    def save(self, *args, **kwargs):
+        # Constrain very large uploads so the site never serves an
+        # unnecessarily huge file. Preserves aspect ratio, never crops.
+        # Existing already-uploaded images are untouched — this only runs
+        # on new saves going forward.
+        if self.image and hasattr(self.image, "file"):
+            from io import BytesIO
+            import sys
+            from PIL import Image
+            from django.core.files.uploadedfile import InMemoryUploadedFile
+            try:
+                img = Image.open(self.image)
+                max_dim = 1600
+                if img.width > max_dim or img.height > max_dim:
+                    img.thumbnail((max_dim, max_dim), Image.LANCZOS)
+                    buffer = BytesIO()
+                    fmt = "JPEG" if img.mode in ("RGB", "L") else "PNG"
+                    if fmt == "JPEG" and img.mode != "RGB":
+                        img = img.convert("RGB")
+                    img.save(buffer, format=fmt, quality=88, optimize=True)
+                    buffer.seek(0)
+                    self.image = InMemoryUploadedFile(
+                        buffer, "ImageField", self.image.name,
+                        f"image/{fmt.lower()}", sys.getsizeof(buffer), None)
+            except Exception:
+                pass  # if Pillow can't process it, save the original untouched
+        super().save(*args, **kwargs)
