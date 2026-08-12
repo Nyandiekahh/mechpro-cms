@@ -8,8 +8,8 @@ from django.views.generic import TemplateView
 
 from catalogue.views import ProductDetailView, ProductListView
 from content.views import (IndustryDetailView, IndustryListView, PostDetailView,
-                           PostListView, ProjectListView, ServiceDetailView,
-                           ServiceListView)
+                           PostListView, ProjectDetailView, ProjectListView,
+                           ServiceDetailView, ServiceListView)
 from core.sitemaps import SITEMAPS
 from core.views import (ContactView, LegalPageView, MaintenanceStatusView,
                         NewsletterSubscribeView, SiteBundleView, TrackClickView)
@@ -27,6 +27,7 @@ urlpatterns = [
     path("api/products/", ProductListView.as_view(), name="product-list"),
     path("api/products/<slug:slug>/", ProductDetailView.as_view(), name="product-detail"),
     path("api/projects/", ProjectListView.as_view(), name="project-list"),
+    path("api/projects/<slug:slug>/", ProjectDetailView.as_view(), name="project-detail"),
     path("api/blog/", PostListView.as_view(), name="post-list"),
     path("api/blog/<slug:slug>/", PostDetailView.as_view(), name="post-detail"),
 
