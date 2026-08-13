@@ -61,4 +61,4 @@ class ProductListSerializer(ProductSerializer):
     class Meta(ProductSerializer.Meta):
         fields = ["slug", "name", "brand", "model", "category", "capacityBtu",
                   "coverage", "energyRating", "refrigerant", "badges", "idealFor",
-                  "images"]
+                  "images", "price"]
